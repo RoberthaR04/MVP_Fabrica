@@ -1,0 +1,183 @@
+/* --- Estilos do Cabeçalho (FORA do card) --- */
+
+.container-geral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem 0;
+}
+
+.home-header-externo {
+  text-align: center;
+  margin-bottom: 2.5rem; /* Espaço entre o título e o card branco */
+}
+
+.home-header-externo h1 {
+  margin: 0;
+  color: var(--white); /* Texto branco para brilhar no fundo azul */
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.task-counter-externo {
+  margin: 0.5rem 0 0;
+  color: rgba(255, 255, 255, 0.85); /* Branco suave */
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* --- Estilo do Card Branco (Conteúdo) --- */
+
+.home-content {
+  background-color: rgba(255, 255, 255, 0.98); 
+  width: 100%; /* Ocupa o max-width do container pai */
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25); 
+  color: var(--navy);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* --- Formulário de Cadastro --- */
+
+.task-form {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.task-form input {
+  flex-grow: 1;
+  padding: 14px;
+  border: 2px solid #eef2f3;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #f8fafc;
+  transition: all 0.3s ease;
+}
+
+.task-form input:focus {
+  outline: none;
+  border-color: var(--light-blue);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(24, 90, 219, 0.1);
+}
+
+.task-form button {
+  background-color: var(--navy);
+  color: var(--white);
+  border: none;
+  padding: 0 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.task-form button:hover {
+  background-color: #051024;
+  transform: translateY(-1px);
+}
+
+/* --- Lista de Tarefas --- */
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.task-item {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 14px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.task-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+.task-item-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 65%;
+}
+
+.task-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.task-status-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.task-item.pending .task-status-badge {
+  background-color: #fff8e1; 
+  color: #b45309;            
+}
+
+.task-item.completed .task-status-badge {
+  background-color: #ecfdf5; 
+  color: #047857;            
+}
+
+/* --- Botão de Status --- */
+
+.toggle-button {
+  background-color: #fff;
+  border: 2px solid var(--light-blue);
+  color: var(--light-blue);
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.toggle-button:hover {
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+
+.task-item.completed .toggle-button {
+  border-color: #cbd5e1;
+  color: #64748b;
+}
+
+.task-item.completed .toggle-button:hover {
+  background-color: #f1f5f9;
+  color: #334155;
+}
