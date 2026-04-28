@@ -1,41 +1,33 @@
-Minha Direção 🚀
-Um sistema simples e moderno para gerenciamento de tarefas, desenvolvido com React, focado em organização e produtividade.
+# 🚀 Minha Direção - Task Manager
 
-📋 Funcionalidades
-Cadastro de Tarefas: Adicione novas tarefas de forma rápida e intuitiva.
+O **Minha Direção** é um sistema de gerenciamento de tarefas (To-Do List) moderno e intuitivo, desenvolvido em React. O projeto foca em uma interface limpa com contraste entre Azul Marinho e Branco, permitindo que o usuário organize suas metas diárias com facilidade.
 
-Listagem Dinâmica: Visualize todas as suas tarefas pendentes e concluídas em um único lugar.
+## 📋 Requisitos do Sistema (RF)
 
-Gestão de Status: Alterne entre os status "Pendente" e "Concluída" com apenas um clique.
+O sistema foi construído atendendo aos seguintes requisitos funcionais:
 
-Contador Inteligente: Acompanhe em tempo real quantas tarefas você já finalizou.
+* **RF_001:** Permitir o cadastro de novas tarefas.
+* **RF_002:** Listar todas as tarefas cadastradas de forma clara.
+* **RF_003:** Permitir marcar e desmarcar tarefas como concluídas.
+* **RF_004:** Atualização automática da lista após qualquer ação.
+* **RF_005:** Visualização em tempo real do status (Pendente/Concluído) de cada item.
 
-🛠️ Tecnologias Utilizadas
-React.js (Biblioteca principal)
+## 🛠️ Tecnologias Utilizadas
 
-Vite (Build tool e ambiente de desenvolvimento)
+* **React.js**: Biblioteca principal para construção da interface.
+* **Vite**: Ferramenta de build para um desenvolvimento rápido.
+* **CSS3**: Estilização personalizada com foco em UX (User Experience).
+* **React Hooks (`useState`)**: Para gerenciamento de estado das tarefas.
 
-CSS Puro (Estilização responsiva e personalizada)
+## 📂 Estrutura de Pastas
 
-Hooks (useState) para gerenciamento de estado
-
-🚀 Como rodar o projeto
-Clone o repositório (ou abra a pasta do projeto no seu editor).
-
-Instale as dependências:
-
-Bash
-npm install
-Inicie o ambiente de desenvolvimento:
-
-Bash
-npm run dev
-Acesse o endereço indicado no terminal (geralmente http://localhost:5173) no seu navegador.
-
-🎨 Paleta de Cores
-O projeto utiliza um design clean com foco em contraste e legibilidade:
-
-Azul Marinho: (#0A1931) para elementos principais.
+```text
+src/
+├── assets/         # Ícones e imagens estáticas
+├── components/     # Componentes modulares (Home, TaskForm, TaskList, TaskItem)
+├── App.jsx         # Componente principal com a lógica de estado
+├── App.css         # Estilização principal e identidade visual
+└── main.jsx        # Ponto de entrada do React
 
 Azul Claro: (#185ADB) para ações e destaques.
 
